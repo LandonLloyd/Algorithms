@@ -4,11 +4,12 @@ The predicate pre will be an object property and you need to return true if its 
 translate to true when evaluated in a Boolean context. Remember, you can access object properties through either dot notation or [] notation.*/
 
 function truthCheck(collection, pre) {
-  for(let i = 0; i < collection.length; i++){
-    if(!collection[i][pre]){
+  for (let i = 0; i < collection.length; i++) {
+    if (!collection[i][pre]) {
       return false;
+    }
   }
- }return true;
+  return true;
 }
 
-truthCheck([{"single": "double"}, {"single": NaN}], "single");
+truthCheck([{ single: "double" }, { single: NaN }], "single");

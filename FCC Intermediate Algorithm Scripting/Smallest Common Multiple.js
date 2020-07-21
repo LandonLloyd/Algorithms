@@ -4,30 +4,30 @@ parameters. The range will be an array of two numbers that will not necessarily 
 of both 1 and 3 that is also evenly divisible by all numbers between 1 and 3. The answer here would be 6.*/
 
 function smallestCommons(arr) {
-  let max = Math.max(...arr)
+  let max = Math.max(...arr);
   let min = Math.min(...arr);
-  while(max > min + 1){
-    max--
+  while (max > min + 1) {
+    max--;
     arr.push(max);
-    arr.sort()
+    arr.sort();
   }
-  console.log(arr)
+  console.log(arr);
   let LCM = 1;
-  for(let i = 0; i < arr.length; i++){
-    LCM = lcm(LCM, arr[i])
+  for (let i = 0; i < arr.length; i++) {
+    LCM = lcm(LCM, arr[i]);
   }
   return LCM;
 }
 
+smallestCommons([1, 5]);
 
-smallestCommons([1,5]);
-
-function gcd(a, b){
-  if(b === 0){
+function gcd(a, b) {
+  if (b === 0) {
     return a;
-  }return gcd(b, a % b)
+  }
+  return gcd(b, a % b);
 }
 
-function lcm(a, b){
-  return a * b / gcd(a, b)
+function lcm(a, b) {
+  return (a * b) / gcd(a, b);
 }

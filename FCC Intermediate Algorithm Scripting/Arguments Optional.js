@@ -4,16 +4,17 @@ For example, addTogether(2, 3) should return 5, and addTogether(2) should return
 sum: var sumTwoAnd = addTogether(2); sumTwoAnd(3) returns 5. If either argument isn't a valid number, return undefined.*/
 
 function addTogether() {
-    if(typeof arguments[0] === 'number' && typeof arguments[1] === 'number'){
-      let sum = arguments[0] + arguments[1];
-      return sum
-    }
-  if (typeof arguments[0] === 'number' && !arguments[1]) {
-    let a = arguments[0]
-    return function sumTwo(num){
-      if (typeof num === 'number') {
-      return a + num}
-}
+  if (typeof arguments[0] === "number" && typeof arguments[1] === "number") {
+    let sum = arguments[0] + arguments[1];
+    return sum;
+  }
+  if (typeof arguments[0] === "number" && !arguments[1]) {
+    let a = arguments[0];
+    return function sumTwo(num) {
+      if (typeof num === "number") {
+        return a + num;
+      }
+    };
   }
 }
-addTogether(2,3)
+addTogether(2, 3);

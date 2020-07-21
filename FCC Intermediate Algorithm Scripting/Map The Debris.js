@@ -15,9 +15,11 @@ function orbitalPeriod(arr) {
   return arr.map((a) => {
     return {
       name: a.name,
-      orbitalPeriod: Math.round(2 * Math.PI * Math.sqrt(Math.pow(a.avgAlt + earthRadius, 3)/ GM))
-    }
-  })
+      orbitalPeriod: Math.round(
+        2 * Math.PI * Math.sqrt(Math.pow(a.avgAlt + earthRadius, 3) / GM)
+      ),
+    };
+  });
 }
 
-orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]);
