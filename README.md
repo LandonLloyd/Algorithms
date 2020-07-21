@@ -1,2 +1,2 @@
 # JS-Algorithms
-All of my answers to the <a href="https://www.freecodecamp.org/learn">FreeCodeCamp</a> JS algorithms.
+All of my JS-Algorithm solutions from various sites to help me get better at algorithms and also to track my growth.
