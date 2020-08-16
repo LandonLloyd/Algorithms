@@ -3,7 +3,7 @@
 function rect(w, h) {
   let counter = 1;
   while(counter <= h){
-    console.log('*'.repeat(1).repeat(w))
+    console.log('*'.repeat(w))
     counter++
   }
 }
