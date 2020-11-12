@@ -5,10 +5,7 @@ case (lower or upper case) in order to check for palindromes. We'll pass strings
 also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".*/
 
 function palindrome(str) {
-  let string = str
-  .toLowerCase()
-  .match(/[a-z0-9]/g);
-  return string.join('') === string.reverse().join('')
-   
+  let string = str.toLowerCase().match(/[a-z0-9]/g);
+  return string.join("") === string.reverse().join("");
 }
 palindrome("1 eye for of 1 eye.");

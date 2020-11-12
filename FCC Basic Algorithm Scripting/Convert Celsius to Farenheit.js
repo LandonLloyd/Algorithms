@@ -4,7 +4,7 @@ Celsius. Use the variable fahrenheit already defined and assign it the Fahrenhei
 above to help convert the Celsius temperature to Fahrenheit.*/
 
 function convertToF(celsius) {
-  let fahrenheit = celsius * 9/5 + 32;
+  let fahrenheit = (celsius * 9) / 5 + 32;
   return fahrenheit;
 }
 
