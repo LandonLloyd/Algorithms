@@ -1,2 +1,2 @@
-# JS-Algorithms
-All of my JS-Algorithm solutions from various sites to help me get better at algorithms and also to track my growth.
+# Algorithms
+Algorithm solutions from various sites. This is so I can track my growth and get better at algorithms!
